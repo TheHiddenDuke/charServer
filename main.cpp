@@ -108,7 +108,7 @@ int __cdecl main(void)
                 WSACleanup();
                 return 1;
             }
-            printf("Bytes sent: %d\n", iSendResult);
+            printf("Bytes sent: %d\n %s\n", iSendResult, recvbuf);
         }
         else if (iResult == 0)
             printf("Connection closing...\n");
